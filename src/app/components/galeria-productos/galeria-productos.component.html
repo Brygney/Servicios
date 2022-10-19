@@ -1,0 +1,7 @@
+<p>Productos seleccionados: {{seleccionados}}</p>
+
+<div class="row">
+    <div class="col-6" *ngFor="let producto of productos">
+        <app-presentacion-productos [producto]="producto" (pressButton)="seleccionar($event)"></app-presentacion-productos>
+    </div>
+</div>
